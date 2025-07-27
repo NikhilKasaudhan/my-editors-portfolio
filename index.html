@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Video Editing Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 My Video Portfolio</h1>
+    <p>Add any video (YouTube, Instagram, etc.) with a thumbnail and duration.</p>
+
+    <form id="video-form">
+      <input type="url" id="video-url" placeholder="Video Link (YouTube, Instagram, etc.)" required /><br><br>
+      <input type="number" id="video-duration" placeholder="Duration (minutes)" required min="0" /><br><br>
+      <input type="file" id="thumbnail-upload" accept="image/*" required /><br><br>
+      <button type="submit">Add Video</button>
+    </form>
+
+    <div id="video-list"></div>
+
+    <div class="total-time">
+      <h2>Total Minutes Edited: <span id="total-minutes">0</span> minutes</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
